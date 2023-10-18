@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution Assignment 2</title>
+    <style>
+        input {display:block}
+        button {display: block;}
+        textarea {display: block;}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+</head>
+
+<body>
+
+
+    <span id="one"> I am One Span</span>
+    <span id="two"> Two </span>
+    <span id="three"> Three </span>
+    <span id="four"> Four </span>
+    <span id="five"> Five </span>
+    <span id="six"> Six </span>
+   
+<ul>
+    For this assignment, you need to use core Javascript along with Jquery.
+
+<li> Create a button on a web page</li>
+<li> This button should call a javascript function.</li>
+<li> On click of the button, you should read the value from an input named/id "elementname"</li>
+<li> Javascript function should accept a string value that will be the ID of an element on the page</li>
+<li> Create a textarea named/id "result" on the page</li>
+<li> You should be able to append the innerHTML of given element to the javascript function to the value of textarea.</li>
+<li> You should also add the counter in numeric to another element named/id "totalcount"</li>
+<li>Javascript function can be named: getElementHTML</li>
+<li> If user has not provided a valid name/id of the tag, then you should display an error in console log.</li>
+
+</ul>
+<hr>
+<button onclick="getElementHTML()">Get element and CALL</button> <br>
+
+
+    <input type="text" id="elementname" name="elementname" value="">
+<br>
+
+    <textarea name="result" id="result" rows="4" cols="80"></textarea>
+
+
+    Total Count : <div id="totalcount">0</div>
+    <script>
+      
+            var count = 0;
+
+        
+        function getElementHTML() {
+
+            let elem = $("#elementname").val();
+
+            console.warn(elem);
+            tempelem="#"+elem;
+         elemhtml=$(tempelem).html()+"\n";
+            //console.log($(tempelem).html())
+           
+            if(!elemhtml){
+ console.error("I was not able to find the element this your given name");
+            }
+
+                $("#result").append(elemhtml);
+                count++;
+
+            $("#totalcount").html(count);
+        }
+
+    </script>
+
+</body>
+
+</html>
