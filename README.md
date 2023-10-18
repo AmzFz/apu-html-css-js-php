@@ -9,9 +9,9 @@
 |3  |Introduction to JavaScript                               |2       |1  |      Completed
 |4  |Creating Forms to Collect Data and Validate User Input   |4       |2  |      Completed
 |5  |Communicating with a Remote Data Source                  |4       |2  |      Completed
-|6  |Styling HTML5 by using CSS3                              |2       |3  |      
-|7  |Creating Objects and Methods by Using Javascript         |4       |3  |      
-|8  |Creating Interactive Pages Using HTML5 APIs              |2       |3  |      
+|6  |Styling HTML5 by using CSS3                              |2       |3  |    Completed  
+|7  |Creating Objects and Methods by Using Javascript         |4       |3  |      Completed
+|8  |Creating Interactive Pages Using HTML5 APIs              |2       |3  |      Completed
 |9  |Adding Offline Support to Web Applications               |3       |4  |      
 |10 |Implementing an Adaptive User Interface                 |3       |4  |      
 |11 |Creating Advanced Graphics                               |2       |4  |      
@@ -27,3 +27,7 @@
 |21 |PHP Object Oriented                                     |5       |8  |      
 |22 |PHP and Pear                                             |3       |8  |      
 |   |                                                         |        |   |      
+
+
+---------------------------
+
