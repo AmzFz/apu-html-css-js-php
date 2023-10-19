@@ -15,6 +15,8 @@ Shape:
     <option value="rectangle">Rectangle</option>
     <option value="circle">Circle</option>
 </select>
+<input type="color" id="mycolor">
+
 <button id="drawShape">Draw Shape</button>
 <button id="downloadCanvas">Download Canvas</button>
 
@@ -27,9 +29,10 @@ Shape:
 
     $('#drawShape').click(function() {
         const shapeType = $('#shapeSelect').val();
+        const  mycolor= $("#mycolor").val();
         const shape = shapeType === 'rectangle' ? 
-            { type: 'rectangle', x: 50, y: 50, width: 100, height: 50 } :
-            { type: 'circle', x: 250, y: 250, radius: 50 };
+            { type: 'rectangle', x: 50, y: 50, width: 100, height: 50, color:mycolor } :
+            { type: 'circle', x: 250, y: 250, radius: 50, color:mycolor };
         shapes.push(shape);
         redrawCanvas();
     });
@@ -74,11 +77,12 @@ Shape:
     function redrawCanvas() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         shapes.forEach(shape => {
+            
             if (shape.type === 'rectangle') {
-                ctx.fillStyle = '#ff0000';
+                ctx.fillStyle = shape.color;
                 ctx.fillRect(shape.x, shape.y, shape.width, shape.height);
             } else {
-                ctx.fillStyle = '#00ff00';
+                ctx.fillStyle = shape.color;
                 ctx.beginPath();
                 ctx.arc(shape.x, shape.y, shape.radius, 0, 2 * Math.PI);
                 ctx.fill();
