@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin:0px}
+
+        /* Without transition */
+    .box {
+        position: absolute;
+        width: 100%;
+        height: 700px;
+        font-size: 120px;
+        color:white;
+        padding: 0px 0px;
+
+        background-color: red;
+      }
+      
+      /* With transition */
+      .sideboxbanner {
+        position: absolute;
+        right:0px;
+        width: 200px;
+        height: 100px;
+        padding: 0px;
+        font-size:20px;
+        float:right;
+        background-color: blue;
+       transition: height 2s, width 5s, background-color 2s;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+<div class="box">
+    <button id="closebutton" onclick="movebanner()" style="float:right">Close</button>
+   
+   <img id="myimage" class="" src="https://parade.com/.image/t_share/MTkwNTgxMTMxMTY3MDgxNTk3/good-comebacks-2-jpg.jpg">
+    Free Offers !!!
+
+</div>
+
+<div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, similique quam pariatur, necessitatibus fugiat odit laborum harum ducimus eius expedita repudiandae incidunt dolorum autem, commodi tempore enim. Harum a tempora necessitatibus sit architecto amet, repellendus inventore quasi iure accusamus reiciendis quia nostrum nulla provident, earum eum perspiciatis ab, temporibus incidunt voluptas perferendis repudiandae. Quisquam, ut dolor aliquid ratione adipisci mollitia facere illum corporis est. Delectus totam quaerat quasi modi in. Molestias, voluptate quis ut nulla recusandae magnam maxime quaerat est provident voluptatem laborum harum sapiente nobis itaque ducimus, temporibus ab totam. Hic voluptatum impedit culpa voluptates, ab ipsam harum magnam, repellat saepe cumque sunt possimus necessitatibus, optio eius placeat corporis at maxime expedita minus. Exercitationem, enim! Recusandae magnam cupiditate pariatur laudantium distinctio cumque exercitationem. Suscipit itaque maiores at corporis blanditiis veritatis in similique sunt deleniti animi aut, porro magni, harum debitis fugiat cumque quam minima labore ea laborum est distinctio temporibus? Commodi tempora dolorum nostrum autem quibusdam fugit ipsum pariatur consequuntur reprehenderit laborum alias aliquam eos, ab ut debitis quia reiciendis modi quisquam beatae id et animi! Sed, obcaecati dolor vero odit qui architecto necessitatibus exercitationem odio reiciendis neque labore iure molestias error ut perspiciatis. Voluptatem officia ipsam veritatis dicta necessitatibus, a iure culpa optio? Atque non soluta minus expedita quibusdam saepe alias nemo. Magnam sed modi deserunt a culpa, dicta ad saepe, laborum enim rerum, nihil nobis doloribus aperiam architecto vero odit. Quibusdam expedita eveniet magnam et, sit fuga voluptatem incidunt dignissimos nostrum vitae fugiat voluptas similique mollitia rerum harum quidem tempore rem exercitationem, aliquam, consequatur nesciunt assumenda neque! Error porro, odio, cupiditate sit enim omnis veritatis culpa nostrum numquam, nobis est. Veniam hic assumenda cupiditate, incidunt error facere adipisci est laborum odit voluptatem minima quisquam saepe rem doloribus eveniet unde. Dignissimos, repellendus odit. Dolorem assumenda culpa nemo veritatis sunt id sed, quisquam deleniti ipsam quasi laboriosam ducimus? Culpa vel commodi atque qui est consectetur ullam consequuntur, architecto ipsum? Aut facilis nulla est fugit delectus quas accusamus neque vitae, sed aliquid, ipsa illum magni dolorem culpa. Repudiandae voluptatibus nihil enim obcaecati unde, ut aperiam consequatur minus blanditiis sequi in? Nobis enim vel, labore suscipit laudantium harum quo quidem quam! Iusto atque ab iure sint quisquam quas rem ipsam ipsum in ratione ut deleniti consequatur dicta, provident numquam fugiat quo, distinctio eligendi et vel veritatis itaque nam quam? Illum omnis veniam minus, repellendus tempore autem ipsa error voluptatem fugiat adipisci fugit impedit molestias modi ab repellat eaque cumque excepturi laudantium at accusamus. Harum quibusdam ex nobis optio perspiciatis accusantium alias obcaecati. Vero, ex numquam? Suscipit expedita facilis laborum perspiciatis eveniet, doloribus, cum repellendus vitae, quia in possimus numquam commodi. Necessitatibus accusamus ipsam odio dolorem fugit sequi debitis assumenda veritatis! Enim sit magni ipsa et atque. Illum nulla enim fugiat est aspernatur. Atque ipsam sapiente culpa tenetur, itaque magni? Deleniti omnis adipisci exercitationem, maiores earum animi fuga expedita facilis. Exercitationem maiores nisi laboriosam, sint hic saepe quaerat deserunt incidunt totam facere? Suscipit rem temporibus unde iste quis distinctio consequuntur necessitatibus repellendus?
+</div>
+<script>
+
+    function movebanner()
+    {
+    console.log("Yes, I am being called.")
+    $(".box").addClass("sideboxbanner");
+    $("#closebutton").css("visibility","hidden");
+    $("#myimage").addClass("sideboxbanner");
+   // Create the same transition on the image also ## TODO
+    }
+   
+   setTimeout("movebanner()",5000);
+</script>
+    
+</body>
+</html>

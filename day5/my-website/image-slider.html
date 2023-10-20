@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    
+<style>
+    div {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    
+    .slider {
+        display: flex;
+        width: 500px;
+        overflow: hidden;
+    }
+    
+    .slide {
+        min-width: 100%;
+        transition: all 0.5s;
+        opacity: 0;
+        position: absolute;
+    }
+    
+    .slide.current {
+        opacity: 1;
+        position: relative;
+    }
+    
+    .buttons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+  <div class="slider">
+        <div class="slide current">
+            <img src="https://images.unsplash.com/photo-1600716051809-e997e11a5d52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NDgzMDl8MHwxfHNlYXJjaHwxfHxzYW1wbGUlMjBpbWFnZXxlbnwwfHx8fDE2OTc3MzM5NzB8MA&ixlib=rb-4.0.3&q=80&w=400" alt="Sample Image 1">
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1642480532034-362360552ccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NDgzMDl8MHwxfHNlYXJjaHwyfHxzYW1wbGUlMjBpbWFnZXxlbnwwfHx8fDE2OTc3MzM5NzB8MA&ixlib=rb-4.0.3&q=80&w=400" alt="Sample Image 2">
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1579165466741-7f35e4755660?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NDgzMDl8MHwxfHNlYXJjaHwzfHxzYW1wbGUlMjBpbWFnZXxlbnwwfHx8fDE2OTc3MzM5NzB8MA&ixlib=rb-4.0.3&q=80&w=400" alt="Sample Image 3">
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+
+    <div class="buttons">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </div>
+    <script>
+
+        const slides = document.querySelectorAll('.slide');
+ console.log(slides);
+
+        const nextBtn = document.getElementById('next');
+        const prevBtn = document.getElementById('prev');
+
+        console.log(nextBtn);
+let currentSlide = 0;
+
+nextBtn.addEventListener('click', () => {
+    console.log("I was able to get the event")
+    slides[currentSlide].classList.remove('current');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('current');
+});
+
+prevBtn.addEventListener('click', () => {
+    slides[currentSlide].classList.remove('current');
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    slides[currentSlide].classList.add('current');
+});
+    </script>
+</div>
+</body>
+</html>
