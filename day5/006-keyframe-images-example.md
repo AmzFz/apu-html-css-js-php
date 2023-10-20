@@ -49,3 +49,6 @@ When this image is loaded on a webpage, it will play the `fadeInScaleUp` animati
 - You can apply any kind of keyframe animation to images, not just the fade and scale example provided.
 - Ensure that animations enhance the user experience and don't distract or detract from the content.
 - Always test animations across different browsers and devices to ensure consistent behavior.
+
+
+---------
