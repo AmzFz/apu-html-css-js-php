@@ -19,10 +19,10 @@ The session is currently ongoing, and the content may evolve as we delve deeper 
 |12 |Animate the User Interface                               |4       |5  |    Completed  
 |13 |Implementing Real-Time Communication by using Web Sockets|4       |5  |    Completed  
 |14 |Creating a Web Worker Process                            |4       |6  |   Completed   
-|15 |History of PHP                                           |1       |6  |      
-|16 |PHP Language Basics                                      |2       |6  |      
-|17 |PHP Variables                                            |1       |6  |      
-|18 |Control Structures                                       |2       |7  |      
+|15 |History of PHP                                           |1       |6  |   Completed   
+|16 |PHP Language Basics                                      |2       |6  |   Completed
+|17 |PHP Variables                                            |1       |6  |   Completed   
+|18 |Control Structures                                       |2       |7  |   Completed   
 |19 |Regular Expressions                                      |2       |7  |      
 |20 |PHP Functions                                            |4       |7  |      
 |21 |PHP Object Oriented                                     |5       |8  |      
