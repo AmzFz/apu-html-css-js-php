@@ -12,12 +12,12 @@
 |6  |Styling HTML5 by using CSS3                              |2       |3  |    Completed  
 |7  |Creating Objects and Methods by Using Javascript         |4       |3  |      Completed
 |8  |Creating Interactive Pages Using HTML5 APIs              |2       |3  |      Completed
-|9  |Adding Offline Support to Web Applications               |3       |4  |      
-|10 |Implementing an Adaptive User Interface                 |3       |4  |      
-|11 |Creating Advanced Graphics                               |2       |4  |      
-|12 |Animate the User Interface                               |4       |5  |      
-|13 |Implementing Real-Time Communication by using Web Sockets|4       |5  |      
-|14 |Creating a Web Worker Process                            |4       |6  |      
+|9  |Adding Offline Support to Web Applications               |3       |4  |    Completed
+|10 |Implementing an Adaptive User Interface                 |3       |4  |   Completed   
+|11 |Creating Advanced Graphics                               |2       |4  |   Completed   
+|12 |Animate the User Interface                               |4       |5  |    Completed  
+|13 |Implementing Real-Time Communication by using Web Sockets|4       |5  |    Completed  
+|14 |Creating a Web Worker Process                            |4       |6  |   Completed   
 |15 |History of PHP                                           |1       |6  |      
 |16 |PHP Language Basics                                      |2       |6  |      
 |17 |PHP Variables                                            |1       |6  |      
