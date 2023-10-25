@@ -149,7 +149,6 @@ We need to do changes as per requirements.
 CREATE TABLE orders (
     order_id INT AUTO_INCREMENT PRIMARY KEY,
     book_id INT,
-    customer_name VARCHAR(255) NOT NULL,
     userid VARCHAR(255) NOT NULL,
     order_date DATE NOT NULL,
     quantity INT NOT NULL,
