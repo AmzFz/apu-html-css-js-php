@@ -141,3 +141,28 @@ class Order {
 
 **Notes**:
 We need to do changes as per requirements.
+
+
+--------
+
+```sql
+CREATE TABLE orders (
+    order_id INT AUTO_INCREMENT PRIMARY KEY,
+    book_id INT,
+    customer_name VARCHAR(255) NOT NULL,
+    userid VARCHAR(255) NOT NULL,
+    order_date DATE NOT NULL,
+    quantity INT NOT NULL,
+    total_price DECIMAL(10, 2) NOT NULL,
+    shipping_address TEXT NOT NULL,
+    order_status ENUM('Pending', 'Shipped', 'Delivered', 'Cancelled') NOT NULL DEFAULT 'Pending',
+    FOREIGN KEY (book_id) REFERENCES books(book_id)
+);
+```
+
+**Notes**:
+1. `order_id` is set as the primary key and will auto-increment.
+2. `book_id` is a foreign key that references the `book_id` in the `books` table. This establishes the relationship between the `orders` and `books` tables.
+3. `userid`, `customer_email`, `order_date`, `quantity`, `total_price`, `shipping_address`, and `order_status` are fields related to the order details.
+4. `order_status` is an ENUM type that can have one of the values: 'Pending', 'Shipped', 'Delivered', or 'Cancelled'. The default status is 'Pending'.
+5. Adjust the field types and lengths based on your specific requirements.
