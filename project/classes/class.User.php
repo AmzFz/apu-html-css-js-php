@@ -10,8 +10,7 @@ class User
     private $errors=array();
     public function __construct()
     {
-        global $conn;
-        $this->conn=$conn;
+        $this->conn=Utility::getDBConnection();
 
     }
     public function createUser($UserInfo)

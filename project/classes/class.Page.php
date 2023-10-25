@@ -41,7 +41,12 @@ ob_start();
 
     private function getSidebarContent()
     {
-        return file_get_contents("parts/sidebar.php");
+//        return file_get_contents("parts/sidebar.php");
+
+ob_start();
+        require("parts/sidebar.php");
+        return ob_get_clean();
+
 
     }
     private function getHeadSectionContent()

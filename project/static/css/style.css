@@ -79,3 +79,35 @@ button:hover {
 }
 
 #sidebar {margin-right:40px}
+
+
+   /* Flex Table Styles */
+   .flex-table {
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* adjust as needed */
+    margin: 50px auto; /* centers the table horizontally */
+    border: 1px solid black;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-cell {
+    flex: 1; /* equally distribute space among cells in a row */
+    padding: 8px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.header .flex-cell {
+    font-weight: bold;
+    background-color: #e0e0e0;
+}
+
+/* Extra Styling for better visualization */
+body {
+    font-family: Arial, sans-serif;
+}

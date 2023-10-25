@@ -27,15 +27,8 @@ if (ENVIROMENT == "PROD") {
 
 ///// Please do not change anything after this line, unless you know what you are doing !!! 
 
-$conn = new mysqli(SERVER, USER, PASSWORD, DBNAME);
-
-if(SHOW_MYSQL_ERROR===true) {
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-}
-
-
-
+require_once("classes/class.Utility.php");
 require_once("classes/class.Page.php");
 require_once("classes/class.User.php");
+require_once("classes/class.Book.php");
+require_once("classes/class.Order.php");

@@ -7,8 +7,20 @@ $page= new Page($PageInfo);
 ob_start();
 ?>
 
-This is my my content
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nihil molestiae corporis tempora consequatur omnis, optio ex magnam quibusdam est dicta unde reiciendis odit tempore aliquid perspiciatis enim minima possimus. Nobis beatae similique porro vel ipsum iure explicabo fugiat aperiam possimus autem quibusdam, dolorem fugit velit magnam quae, dicta vero, laborum eligendi debitis quis qui sunt ut reiciendis in! Natus voluptate dolor omnis magni facilis deleniti qui aliquid culpa dicta, eius earum at labore nam ex inventore ut officia optio eveniet beatae ipsam minima non. Nesciunt quibusdam corporis provident aperiam doloremque tempora temporibus natus in saepe amet eligendi tenetur placeat voluptas ullam ab possimus hic ipsa, dignissimos enim iste libero sed! Temporibus, velit, ad animi ab voluptas sunt eveniet iure in excepturi nobis inventore! Repudiandae, deleniti praesentium. Vero, beatae placeat? Cumque quo natus voluptates. Fuga quod eius unde quam vero officiis corrupti voluptas voluptatem harum libero voluptate blanditiis ad laudantium assumenda, eligendi dolor laboriosam, facilis explicabo porro enim illum doloremque nisi incidunt. Dolore reprehenderit natus architecto? Fugit, officiis a, corrupti mollitia suscipit autem odio blanditiis atque, nulla eaque fuga perferendis illum aliquam aspernatur velit cum quas! Minima illo blanditiis nobis perferendis dolore, velit cumque odio nam enim molestiae eos eveniet iste omnis fugiat ducimus nesciunt? Corporis tenetur nulla, quidem facere sed dolor recusandae dicta voluptas itaque ut placeat deleniti, delectus assumenda id exercitationem doloremque non omnis natus, mollitia eum dolorem quos. Porro doloremque optio sint commodi eveniet eius omnis laudantium rerum culpa officia dolorum earum sit explicabo voluptatibus enim fugiat possimus, voluptates ut itaque aut ratione non laboriosam impedit. Vero voluptate pariatur maiores non autem quidem. Corporis, aspernatur iste labore molestias rerum soluta totam error mollitia quo at officia cum est ad id pariatur, omnis a, repellat ullam ipsam accusantium cupiditate voluptas ex! Quasi veniam ad deserunt quam! Non sunt illo doloremque quia ex, modi odio quae dicta a, vero tenetur nemo soluta adipisci, velit consequuntur veritatis similique eos quisquam repellat numquam! Architecto id at eum totam quo optio laborum assumenda laboriosam deleniti velit quam omnis eaque doloremque doloribus aliquam accusantium beatae, rerum ad nam consectetur minus deserunt repudiandae officiis. Ipsam impedit velit perferendis? Quos dolorum, magnam soluta quam laboriosam assumenda alias sequi possimus ullam rerum officia delectus deserunt dignissimos? In quasi, modi nam sequi at similique! Magni exercitationem eaque dolore aspernatur dolor quidem et ea assumenda ducimus soluta nobis, nulla illum illo nostrum, impedit esse maxime, dignissimos vitae mollitia sunt. Eius tenetur sit minus quas, magnam eveniet voluptate impedit ut labore fuga consequatur itaque numquam omnis! Voluptas non accusamus dolores earum nemo doloremque incidunt tenetur atque similique provident labore molestias, ut quibusdam aliquid pariatur magnam commodi architecto sed rerum a? Aspernatur maxime voluptate dolore necessitatibus dignissimos a optio minima fuga illum officiis, facere et eum ut cupiditate laboriosam quos vero sapiente ex, perferendis vel. Obcaecati hic quasi a iusto, dolorem sint quae nisi quas quod nesciunt. Eos obcaecati libero iste inventore, iure, quam eius rem dolores doloremque dolor delectus, blanditiis debitis error similique veritatis in illum pariatur temporibus necessitatibus.
+<?php 
+$book= new Book();
+$Books=$book->getBooks();
+
+foreach($Books as $Book) {
+    print $Book['book_id'];
+    print "<br>";
+    print $Book['title'];
+    print "<br>";
+    print "<a href=\"buynow.php?bookid={$Book['book_id']}\"> Buy Now</a>";
+}
+
+
+?>
 
 
 
