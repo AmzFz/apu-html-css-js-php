@@ -24,8 +24,8 @@ The session is currently ongoing, and the content may evolve as we delve deeper 
 |17 |PHP Variables                                            |1       |6  |   Completed   
 |18 |Control Structures                                       |2       |7  |   Completed   
 |19 |Regular Expressions                                      |2       |7  |      
-|20 |PHP Functions                                            |4       |7  |      
-|21 |PHP Object Oriented                                     |5       |8  |      
+|20 |PHP Functions                                            |4       |7  | Completed     
+|21 |PHP Object Oriented                                     |5       |8  |      Completed
 |22 |PHP and Pear                                             |3       |8  |      
 |   |                                                         |        |   |      
 
