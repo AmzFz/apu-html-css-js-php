@@ -16,13 +16,11 @@ foreach($Books as $Book) {
     print "<br>";
     print $Book['title'];
     print "<br>";
-    print "<a href=\"buynow.php?bookid={$Book['book_id']}\"> Buy Now</a>";
+    print "<a href=\"buynow.php?bookid={$Book['book_id']}\"> Buy Now </a>";
 }
 
 
 ?>
-
-
 
 <?php 
 $MainContent=ob_get_clean();

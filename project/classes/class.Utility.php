@@ -3,6 +3,25 @@
 class Utility
 {
 
+
+    public static function isValidPhoneNumber($string)
+    {
+ if (preg_match("/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/", $string)) {
+ return true;
+} else {
+    return false;
+}
+    }
+
+    public static function isValidEmailAddress($string)   
+    {
+        if (preg_match("/^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/", $string)) {
+           return true;
+        } else {
+           return false;
+        }
+        
+    }
     static function getDBConnection()
     {
 
@@ -46,7 +65,12 @@ return $Table;
 
     static function getHTMLTablefromPHPArray(array $array)
     {
-
+        if(count($array)==0)
+        {
+           
+            return;
+        }
+  
         
        $AllColumns= array_keys($array['0']);
 

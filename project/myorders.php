@@ -15,8 +15,13 @@ $userInfo=$user->getUserInfo($_SESSION['userid']);
 $order= new Order();
 $AllOrders=$order->getOrders();
 //var_dump($order->getOrders())
-print Utility::getHTMLTablefromPHPArray($AllOrders);
+if(count($AllOrders)==0)
+{
+    print "No Orders available for you.";
+}else{
 
+print Utility::getHTMLTablefromPHPArray($AllOrders);
+}
 ?>
 
 <?php 

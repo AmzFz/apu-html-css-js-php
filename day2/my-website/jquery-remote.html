@@ -23,7 +23,7 @@
 <script>
     function makeGETRequest() {
         $.ajax({
-            url: 'https://jsonplaceholder.typicode.com/users',
+            url: 'http://localhost/api/users',
             type: 'GET',
             success: function(data) {
                 $('#response').val(JSON.stringify(data, null, 2));
@@ -33,7 +33,7 @@
 
     function makePOSTRequest() {
         $.ajax({
-            url: 'https://jsonplaceholder.typicode.com/posts',
+            url: 'http://localhost/api/posts',
             type: 'POST',
             contentType: 'application/json; charset=UTF-8',
             data: JSON.stringify({
@@ -49,7 +49,7 @@
 
     function makePUTRequest() {
         $.ajax({
-            url: 'https://jsonplaceholder.typicode.com/posts/1',
+            url: 'http://localhost/api/posts/1',
             type: 'PUT',
             contentType: 'application/json; charset=UTF-8',
             data: JSON.stringify({
@@ -66,7 +66,7 @@
 
     function makeDELETERequest() {
         $.ajax({
-            url: 'https://jsonplaceholder.typicode.com/posts/1',
+            url: 'http://localhost/api/posts/1',
             type: 'DELETE',
             success: function() {
                 $('#response').val("Successfully deleted!");

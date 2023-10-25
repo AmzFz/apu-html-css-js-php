@@ -156,23 +156,25 @@ class Order {
     
     public function getOrders($howMany=-1,$start=0)
     {
+        $Orders=array();
+        $userid=isset($_SESSION['userid'])?$_SESSION['userid']:0;
         $howMany=(int)$howMany;
 if($howMany== -1){
-        $Query = "SELECT * FROM `orders`";
+        $Query = "SELECT * FROM `ordddders` where `userid` = '$userid'";
 }else{
-    $Query = "SELECT * FROM `orders` LIMIT $start, $howMany";
+    $Query = "SELECT * FROM `ordddders`  where `userid` = '$userid' LIMIT $start, $howMany";
 }
 
 $result=$this->conn->query($Query);
     if ($result) {
-        $Orders=array();
+       
         while ($row=$result->fetch_assoc()) {
             $Orders[]= $row;
         }
       return $Orders;
     }else
     {
-        return false;
+        return  $Orders=array();
     }
 
 
